@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MoreCollections.PinnedArray</id>
+    <version>$version$</version>
+    <title>MoreCollections.PinnedArray collection</title>
+    <authors>Darko Jurić</authors>
+    <owners>MoreDotNET</owners>
+    <projectUrl>https://github.com/more-dotnet/more-collections</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Pinned array where elements are blittable-type objects.
+    </description>
+    <summary>Pinned array where elements are blittable-type objects.</summary>
+    <tags>collection, pinned, array</tags>
+
+    <dependencies>
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="..\Source\PinnedArray.cs" target="content\net45\MoreCollections\PinnedArray.cs" />
+    <file src="readmePinnedArray.txt" target="readme.txt" />
+  </files>
+</package>
