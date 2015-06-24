@@ -4,7 +4,7 @@ Provides a set of portable collections installable as source files via NuGet.
 
 ## Collections / NuGet packages
 
-  + <a href="https://www.nuget.org/packages/MoreCollections.Map">MoreCollections.Map</a>
+  + <a href="https://www.nuget.org/packages/MoreCollections.Map">MoreCollections.Map</a>  
   Two-way dictionary (keyA-keyB).
 
    ``` csharp
@@ -14,7 +14,7 @@ Provides a set of portable collections installable as source files via NuGet.
   Console.WriteLine(map.Reverse["Hello"]); //Outputs 42
     ```
 
-  + <a href="https://www.nuget.org/packages/MoreCollections.CirclularList">MoreCollections.CircularList</a>
+  + <a href="https://www.nuget.org/packages/MoreCollections.CirclularList">MoreCollections.CircularList</a>  
   List which supports modulo indexing.
 
   ``` csharp
@@ -25,7 +25,7 @@ Provides a set of portable collections installable as source files via NuGet.
   Console.WriteLine(circularList[6]); //outputs "one"
   ```
   
-  + <a href="https://www.nuget.org/packages/MoreCollections.History">MoreCollections.History</a>
+  + <a href="https://www.nuget.org/packages/MoreCollections.History">MoreCollections.History</a>  
   Stack-like structure with predefined capacity.
 
   ``` csharp
@@ -42,7 +42,7 @@ Provides a set of portable collections installable as source files via NuGet.
   }
   ```
   
-  + <a href="https://www.nuget.org/packages/MoreCollections.IndexedCollection">MoreCollections.IndexedCollection</a>
+  + <a href="https://www.nuget.org/packages/MoreCollections.IndexedCollection">MoreCollections.IndexedCollection</a>  
   Indirect indexing collection.
 
   ``` csharp
@@ -58,7 +58,7 @@ Provides a set of portable collections installable as source files via NuGet.
   }
   ```
   
-  + <a href="https://www.nuget.org/packages/MoreCollections.PinnedArray">MoreCollections.PinnedArray</a>
+  + <a href="https://www.nuget.org/packages/MoreCollections.PinnedArray">MoreCollections.PinnedArray</a>  
   Pinned array where elements are blittable-type objects.
 
   ``` csharp  
@@ -78,6 +78,7 @@ Provides a set of portable collections installable as source files via NuGet.
 ## How to Engage, Contribute and Provide Feedback  
 Remember: Your opinion is important and will define the future roadmap.
 + questions, comments - message on Github, or write to: darko.juric2 [at] gmail.com
++ code contributions are welcome
 + **spread the word** 
 
 ## Final word
