@@ -1,5 +1,5 @@
 #region Licence and Terms
-// More DotNET (MoreCollections)
+// MoreCollections
 // https://github.com/more-dotnet/more-collections
 //
 // Copyright © Darko Jurić, 2015 

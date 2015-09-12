@@ -6,8 +6,8 @@
     <version>$version$</version>
     <title>MoreCollections.PinnedArray collection</title>
     <authors>Darko Jurić</authors>
-    <owners>MoreDotNET</owners>
-    <projectUrl>https://github.com/more-dotnet/more-collections</projectUrl>
+    <owners>Darko Jurić</owners>
+    <projectUrl>https://github.com/dajuric/more-collections</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Pinned array where elements are blittable-type objects.

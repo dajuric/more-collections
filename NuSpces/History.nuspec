@@ -6,8 +6,8 @@
     <version>$version$</version>
     <title>MoreCollections.History collection</title>
     <authors>Darko Jurić</authors>
-    <owners>MoreDotNET</owners>
-    <projectUrl>https://github.com/more-dotnet/more-collections</projectUrl>
+    <owners>Darko Jurić</owners>
+    <projectUrl>https://github.com/dajuric/more-collections</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Stack-like structure with predefined capacity.

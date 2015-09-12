@@ -16,6 +16,6 @@ echo Current directory: %current%
 echo Output  directory: %output%
 echo.
 
-forfiles /p %output% /m *.nupkg /c "cmd /c %current%\NuGet.exe push @file"
+forfiles /p %output% /m *.nupkg /c "cmd /c ..\NuGet.exe push @file"
 
 pause
