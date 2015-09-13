@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MoreCollections.LazyMemoryCache</id>
+    <version>$version$</version>
+    <title>MoreCollections.LazyMemoryCache collection</title>
+    <authors>Darko Jurić</authors>
+    <owners>Darko Jurić</owners>
+    <projectUrl>https://github.com/dajuric/more-collections</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Lazy object loading-unloading for huge collections which do not fit into RAM.
+    </description>
+    <summary>Lazy object loading and removal cache. Useful for big collections which do not fit into RAM.</summary>
+    <tags>cache, lazy, LRU, element-cache, constructor-caching</tags>
+
+    <dependencies>
+      <dependency id="Microsoft.VisualBasic"  version="10.0" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="..\Source\LazyMemoryCache.cs" target="content\net45\MoreCollections\LazyMemoryCache.cs" />
+    <file src="readmeLazyMemoryCache.txt" target="readme.txt" />
+  </files>
+</package>

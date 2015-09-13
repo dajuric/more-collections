@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D455FFC7-B1E9-45E3-BC3A-5A9EA8FAEF7B}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,11 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuSpecs", "NuSpecs", "{D83B
 		NuSpces\CircularList.nuspec = NuSpces\CircularList.nuspec
 		NuSpces\History.nuspec = NuSpces\History.nuspec
 		NuSpces\IndexedCollection.nuspec = NuSpces\IndexedCollection.nuspec
+		NuSpces\LazyMemoryCache.nuspec = NuSpces\LazyMemoryCache.nuspec
 		NuSpces\Map.nuspec = NuSpces\Map.nuspec
 		NuSpces\PinnedArray.nuspec = NuSpces\PinnedArray.nuspec
 		NuSpces\readmeCircularList.txt = NuSpces\readmeCircularList.txt
 		NuSpces\readmeHistory.txt = NuSpces\readmeHistory.txt
 		NuSpces\readmeIndexedCollection.txt = NuSpces\readmeIndexedCollection.txt
+		NuSpces\readmeLazyMemoryCache.txt = NuSpces\readmeLazyMemoryCache.txt
 		NuSpces\readmeMap.txt = NuSpces\readmeMap.txt
 		NuSpces\readmePinnedArray.txt = NuSpces\readmePinnedArray.txt
 	EndProjectSection

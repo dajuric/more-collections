@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,7 +39,11 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -57,6 +62,7 @@
     <Compile Include="CircluarListTests.cs" />
     <Compile Include="HistoryTests.cs" />
     <Compile Include="IndexedCollectionTests.cs" />
+    <Compile Include="LazyMemoryCacheTests.cs" />
     <Compile Include="MapTests.cs" />
     <Compile Include="PinnedArrayTests.cs" />
   </ItemGroup>
@@ -68,6 +74,9 @@
       <Project>{bcf21e9f-82bc-433b-9bbb-70cc6999615f}</Project>
       <Name>MoreCollections</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

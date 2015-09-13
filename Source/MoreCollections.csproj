@@ -34,6 +34,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
@@ -46,8 +47,12 @@
     <Compile Include="CircularList.cs" />
     <Compile Include="History.cs" />
     <Compile Include="IndexedCollection.cs" />
+    <Compile Include="LazyMemoryCache.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="PinnedArray.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

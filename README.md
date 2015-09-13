@@ -75,6 +75,21 @@ Provides a set of portable collections installable as source files via NuGet.
   Console.WriteLine(arr[0].X); //outputs "3"
   ```
 
+  + <a href="https://www.nuget.org/packages/MoreCollections.LazyMemoryCache">MoreCollections.LazyMemoryCache</a>  
+  Lazy object loading-unloading for huge collections which do not fit into RAM.
+
+  ``` csharp  
+  var lazyMatrixCache = new  LazyMemoryCache<int, double[,]>(maxMemoryOccupation: 0.8f);
+
+  //load items by calling lazyMatrixCache.AddOrUpdate(<key>, <matrix constructor>)
+ 
+  Console.WriteLine("Is element loaded: " + lazyMatrixCache[10].IsValueCreated); //false
+  Console.WriteLine("Item (0,0) value: "  + lazyMatrixCache[10].Value[0,0]); //value at (0,0)
+  Console.WriteLine("Is element loaded: " + lazyMatrixCache[10].IsValueCreated); //true
+
+  //elements are automatically evicted if RAM occupation exceeds 80%
+  ```
+
 ## How to Engage, Contribute and Provide Feedback  
 Remember: Your opinion is important and will define the future roadmap.
 + questions, comments - message on Github, or write to: darko.juric2 [at] gmail.com
