@@ -14,7 +14,7 @@ Provides a set of portable collections installable as source files via NuGet.
   Console.WriteLine(map.Reverse["Hello"]); //Outputs 42
     ```
 
-  + <a href="https://www.nuget.org/packages/MoreCollections.CirclularList">MoreCollections.CircularList</a>  
+  + <a href="https://www.nuget.org/packages/MoreCollections.CircularList">MoreCollections.CircularList</a>  
   List which supports modulo indexing.
 
   ``` csharp
