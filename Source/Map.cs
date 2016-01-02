@@ -25,6 +25,8 @@
 //SOFTWARE.
 #endregion
 
+using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace MoreCollections
@@ -35,14 +37,14 @@ namespace MoreCollections
     /// </summary>
     /// <typeparam name="T1">First key type.</typeparam>
     /// <typeparam name="T2">Second key type.</typeparam>
-    public class Map<T1, T2>
+    public class Map<T1, T2> : IEnumerable<KeyValuePair<T1, T2>>
     {
         /// <summary>
         /// Represents all associations associated with a key.
         /// </summary>
         /// <typeparam name="T3">First key type.</typeparam>
         /// <typeparam name="T4">Second key type.</typeparam>
-        public class Indexer<T3, T4>: IEnumerable<T3>
+        public class Indexer<T3, T4> : IEnumerable<T3>
         {
             private Dictionary<T3, T4> dictionary;
             /// <summary>
@@ -104,12 +106,12 @@ namespace MoreCollections
                 return this.GetEnumerator();
             }
         }
-        
+
         private Dictionary<T1, T2> forward = new Dictionary<T1, T2>();
         private Dictionary<T2, T1> reverse = new Dictionary<T2, T1>();
 
         /// <summary>
-        /// Initializes a new instance of <see cref="Accord.Extensions.Map{T1, T2}"/>.
+        /// Initializes a new instance of <see cref="MoreCollections.Map{T1, T2}"/>.
         /// </summary>
         public Map()
         {
@@ -129,6 +131,38 @@ namespace MoreCollections
         }
 
         /// <summary>
+        /// Removes the associations specified by the key.
+        /// </summary>
+        /// <param name="t1">Forward key.</param>
+        /// <returns>True if the assocaitons exists, false otherwise.</returns>
+        public bool TryRemove(T1 t1)
+        {
+            if (!forward.ContainsKey(t1))
+                return false;
+
+            var val = forward[t1];
+            forward.Remove(t1);
+            reverse.Remove(val);
+            return true;
+        }
+
+        /// <summary>
+        /// Removes the associations specified by the key.
+        /// </summary>
+        /// <param name="t2">Reverse key.</param>
+        /// <returns>True if the assocaitons exists, false otherwise.</returns>
+        public bool TryRemove(T2 t2)
+        {
+            if (!reverse.ContainsKey(t2))
+                return false;
+
+            var val = reverse[t2];
+            reverse.Remove(t2);
+            forward.Remove(val);
+            return true;
+        }
+
+        /// <summary>
         /// Gets all associations with the first <typeparamref name="T1"/> key.
         /// </summary>
         public Indexer<T1, T2> Forward { get; private set; }
@@ -144,6 +178,24 @@ namespace MoreCollections
         {
             forward.Clear();
             reverse.Clear();
+        }
+
+        /// <summary>
+        /// Gets the enumerator of the collections.
+        /// </summary>
+        /// <returns>Enumerator.</returns>
+        public IEnumerator<KeyValuePair<T1, T2>> GetEnumerator()
+        {
+            return forward.GetEnumerator();
+        }
+
+        /// <summary>
+        /// Gets the enumerator of the collections.
+        /// </summary>
+        /// <returns>Enumerator.</returns>
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return forward.GetEnumerator();
         }
     }
 }
